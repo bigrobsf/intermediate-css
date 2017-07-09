@@ -1,0 +1,49 @@
+
+.col-4 {
+  width: 33.333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 960px) {
+  .col-4 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 765px) {
+  .col-4 {
+    width: 100%;
+  }
+}
+
+/* for testing */
+.red {
+  display: inline-block;
+  background-color: red;
+  height: 200px;
+}
+
+.blue {
+  display: inline-block;
+  background-color: blue;
+  height: 200px;
+}
+
+.green {
+  display: inline-block;
+  background-color: green;
+  height: 200px;
+}

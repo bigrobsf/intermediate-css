@@ -1,0 +1,49 @@
+
+
+#clock {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 100%;
+  position: relative;
+}
+
+#second {
+  width: 2px;
+  height: 220px;
+  background-color: red;
+  position: absolute;
+  margin: 30px 0 0 249px;
+  animation: clockworks 60s infinite linear;
+}
+
+#minute {
+  width: 4px;
+  height: 175px;
+  background-color: blue;
+  position: absolute;
+  margin: 75px 0 0 248px;
+  animation: clockworks 3600s infinite linear;
+}
+
+#hour {
+  width: 6px;
+  height: 120px;
+  background-color: gray;
+  position: absolute;
+  margin: 130px 0 0 247px;
+  animation: clockworks 43200s infinite linear;
+}
+
+@keyframes clockworks {
+  0% {
+    transform: rotate(0);
+    transform-origin: center bottom;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center bottom;
+  }
+}
