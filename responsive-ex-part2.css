@@ -30,20 +30,19 @@
 }
 
 /* for testing */
-.red {
+.red, .blue, .green {
   display: inline-block;
-  background-color: red;
   height: 200px;
+}
+
+.red {
+  background-color: red;
 }
 
 .blue {
-  display: inline-block;
   background-color: blue;
-  height: 200px;
 }
 
 .green {
-  display: inline-block;
   background-color: green;
-  height: 200px;
 }
